@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/alarme.css">
+    <title>Title</title>
+</head>
+<body>
+    <div id="clock-wrapper"></div>
+
+    <div class="alrm-main">
+        <div class="txtoftime">Input Alarm Time</div>
+        <div class="input-fill">
+            <input class="getalarmtime" id="hour" type="text" placeholder="12"/>
+            <span class="getalarmtime">:</span>
+            <input class="getalarmtime" id="minutes" type="text" placeholder="10"/>
+        </div>
+        <div class="btntosetalrm" id="setalarm">Set Alarm</div>
+    </div>
+
+    <div class="when-alrm-ring">
+        The alarm will ring at <span class="aumkar"></span>
+    </div>
+
+    <audio id = "audio" preload="auto" src="src/audio/1.mp3" loop>
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+
+    <br/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+    <script src="js/alarme.js"></script>
+</body>
+</html>
